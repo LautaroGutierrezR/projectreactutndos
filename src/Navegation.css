@@ -1,0 +1,29 @@
+.Navegation{
+    background-color: darkgreen;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    border: solid whitesmoke;
+
+    
+}
+li{
+    list-style: none;
+    display: inline;
+   padding-left: 10px;
+   padding-right: 10px;
+   font-size: 24px;
+   border-radius: 20px;
+   padding-bottom: 2px;
+   color: whitesmoke;
+   
+   
+}
+:hover.elementos-lista{
+    background-color: whitesmoke;
+    cursor: pointer;
+    color: darkgreen;
+}
