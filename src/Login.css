@@ -1,0 +1,33 @@
+.Login{
+    height: 300px;
+    width: 500px;
+    border: solid black;
+    margin-top: 100px;
+    display: flex;
+    justify-self: center;
+    margin-left: 450px;
+    flex-direction: column;
+
+   background-color:#ffffffe6; 
+    
+}
+.casillero{
+    margin-left: 10px;
+    margin-top: 50px;
+}
+.boton{
+    background-color: blue;
+    height: 40px;
+    border: 0px;
+    color:whitesmoke;
+    border-radius: 30px;
+    margin-top: 20px;
+    
+    
+}
+
+
+:hover.boton{
+    cursor: pointer;
+}
+.botones{height: 75%;}

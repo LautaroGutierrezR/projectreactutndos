@@ -1,0 +1,54 @@
+.Inicio{
+    height: 300px;
+    width: 500px;
+    border: solid black;
+    margin-top: 100px;
+    display: flex;
+    justify-self: center;
+    margin-left: 450px;
+    flex-direction: column;
+
+   background-color:#ffffffe6; 
+    
+}
+h1{
+    justify-self: center;
+    margin-top: 75px;
+    
+}
+
+.botones{
+   margin-top: 75px;
+   display: inline-flex;
+   justify-content: center;
+   gap: 12px;
+}
+.boton-invitado{
+    background-color: darkgreen;
+    border-radius: 30px;
+    border: 0px;
+    height: 40px;
+    color:whitesmoke
+}
+.boton-administrador{
+    background-color: blue;
+    border-radius: 30px;
+    border: 0px;
+    color:whitesmoke;
+    height: 40px;
+    
+
+}
+:hover.boton-invitado{
+    cursor: pointer;
+    background-color: whitesmoke;
+    border: solid black 1px;
+    color: darkgreen;
+}
+:hover.boton-administrador{
+    cursor: pointer;
+    background-color: whitesmoke;
+    border: solid black 1px;
+    color: blue;
+}
+

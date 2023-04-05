@@ -1,4 +1,5 @@
 import './Navegation.css';
+import { Link } from 'react-router-dom';
 export default Navegation;
 
 function Navegation(){
@@ -6,7 +7,7 @@ function Navegation(){
         <div className="Navegation">
             <ul>
                 <li>⚽</li>
-                <li className='elementos-lista'>Inicio</li>
+          <Link to="/" className='link'>     <li className='elementos-lista'>Inicio</li>   </Link>
                 <li>⚽</li>
                 <li className='elementos-lista'>Jugadores</li>
                 <li>⚽</li>
