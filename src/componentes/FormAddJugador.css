@@ -1,0 +1,21 @@
+.Form-Add-Jugador{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 350px;
+    background-color: gold;
+    border-radius: 20px;
+   
+}
+.casillero-agregar-jugadores{
+    margin-top: 10px;
+}
+.Boton-crear-jugador{
+    margin-top: 25px;
+    width: 200px;
+    align-self: center;
+}
+
+:hover.Boton-crear-jugador{
+    cursor: pointer;
+}
