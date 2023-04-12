@@ -1,18 +1,18 @@
 import "./card.css"
 
 
-export default function Card(){
+export default function Card({datos}){
 
     return(
         <div className="Tarjeta">
             <div className="Imagen">
-
-            </div>
-            <h1 className="Nombre-jugador">Nombre jugador </h1>
+              <img className="Imagen" src={datos.Imagen} alt={datos.Nombre} />
+            </div> 
+            <h1 className="Nombre-jugador"> {datos.Nombre} </h1>
             <ul className="Lista">
-                <li className="elementos-listaa">Nacimiento</li>
-                <li className="elementos-listaa">Equipo</li>
-                <li className="elementos-listaa">Posicion</li>
+                <li className="elementos-listaa">Nacimiento: {datos.Fecha}</li>
+                <li className="elementos-listaa">Equipo:{datos.Equipo}</li>
+                <li className="elementos-listaa">Posicion:{datos.Posicion}</li>
             </ul>
 
         </div>

@@ -17,6 +17,8 @@
 }
 .elementos-listaa{
   display: flex;
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 .Imagen{
     height: 250px;

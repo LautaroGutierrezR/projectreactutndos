@@ -3,6 +3,7 @@ import Card from "./Card";
 import Navegation from "./Navegation";
 import FormAddJugador from "./FormAddJugador";
 import { useEffect,useState } from "react";
+import SectionJugadores from "./SectionJugadores";
 
 
 
@@ -26,15 +27,17 @@ useEffect(()=>{
     // setDatos(alumnos)
 },[])
 
-
+useEffect(()=>{console.log(datos)},[datos])//cada vez que se modifique datos lo pone en pantalla
 
     return(
         <div>
             <Navegation></Navegation>
             <Addjugador></Addjugador>
         
+            {datos.map((dato)=>{
+          return <Card key={datos.indexOf(dato)} datos={dato} />
+           })}
             
-            <Card></Card>
         </div>
     )
         
