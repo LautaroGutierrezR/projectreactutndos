@@ -4,7 +4,7 @@ import Navegation from "./Navegation";
 import FormAddJugador from "./FormAddJugador";
 import { useEffect,useState } from "react";
 import SectionJugadores from "./SectionJugadores";
-
+import  "./Jugadores.css"
 
 
 export default function Jugadores(){
@@ -34,9 +34,11 @@ useEffect(()=>{console.log(datos)},[datos])//cada vez que se modifique datos lo 
             <Navegation></Navegation>
             <Addjugador></Addjugador>
         
+           <div className="Cartas-locas"> 
             {datos.map((dato)=>{
           return <Card key={datos.indexOf(dato)} datos={dato} />
            })}
+           </div>
             
         </div>
     )

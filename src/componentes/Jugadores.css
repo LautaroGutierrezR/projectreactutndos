@@ -1,0 +1,9 @@
+.Cartas-locas{
+    display: flex;
+    flex-direction: row;
+   gap: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
