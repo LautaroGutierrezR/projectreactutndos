@@ -5,9 +5,9 @@ export default function Card({datos}){
 
     return(
         <div className="Tarjeta">
-            <div className="Imagen">
-              <img className="Imagen" src={datos.Imagen} alt={datos.Nombre} />
-            </div> 
+            
+              <img className="Imagen" src={datos.Imagen} alt={datos.Imagen} />
+           
             <h1 className="Nombre-jugador"> {datos.Nombre} </h1>
             <ul className="Lista">
                 <li className="elementos-listaa">Nacimiento: {datos.Fecha}</li>

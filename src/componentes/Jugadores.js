@@ -31,15 +31,16 @@ useEffect(()=>{console.log(datos)},[datos])//cada vez que se modifique datos lo 
 
     return(
         <div>
+            <div className="navi">
             <Navegation></Navegation>
-            <Addjugador></Addjugador>
-        
+            </div>
            <div className="Cartas-locas"> 
             {datos.map((dato)=>{
           return <Card key={datos.indexOf(dato)} datos={dato} />
            })}
            </div>
-            
+            <Addjugador></Addjugador>
+        
         </div>
     )
         

@@ -5,9 +5,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: sticky;
+     position: sticky;     /* no estaria entendiendo porque no me toma el position sticky*/
     border: solid whitesmoke;
-
+ 
     
 }
 li{
