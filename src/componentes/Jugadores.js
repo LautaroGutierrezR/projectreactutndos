@@ -1,9 +1,9 @@
 import Addjugador from "./Addjugador";
 import Card from "./Card";
 import Navegation from "./Navegation";
-import FormAddJugador from "./FormAddJugador";
+
 import { useEffect,useState } from "react";
-import SectionJugadores from "./SectionJugadores";
+
 import  "./Jugadores.css"
 
 
@@ -22,7 +22,7 @@ const traerInfo=async()=>{
 useEffect(()=>{
     traerInfo()
 
-    setTimeout(()=>{console.log(datos)},5000)//ejecutar una funcion luego de un cierto tiempo(seg)
+    //setTimeout(()=>{console.log(datos)},5000)//ejecutar una funcion luego de un cierto tiempo(seg)
     // let alumnos=[....]
     // setDatos(alumnos)
 },[])

@@ -1,6 +1,6 @@
-import { createElement } from "react";
+import "./FormAddJugador.css"
 import "./addJugador.css"
-import FormAddJugador from "./FormAddJugador";
+
 import { useState } from "react";
 
 
@@ -19,7 +19,7 @@ export default function Addjugador(){
             
             
             
-            { ocultar ==false?
+            { ocultar ===false?
             <div id="form-add-jugador">
               <form  method="post" className="Form-Add-Jugador">
                 <h1 className="Crea-tu-Jugador">Crea tu Jugador!</h1>
