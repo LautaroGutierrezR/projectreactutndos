@@ -5,6 +5,7 @@ import Navegation from "./Navegation";
 import { useEffect,useState } from "react";
 
 import  "./Jugadores.css"
+import CardMongo from "./CardMongo";
 
 
 export default function Jugadores(){
@@ -40,7 +41,7 @@ useEffect(()=>{console.log(datos)},[datos])//cada vez que se modifique datos lo 
            })}
            </div>
             <Addjugador></Addjugador>
-        
+            <CardMongo></CardMongo>
         </div>
     )
         
