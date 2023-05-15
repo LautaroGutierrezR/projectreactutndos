@@ -14,6 +14,14 @@ export default function FormAddJugador(){
             Nombre Del Jugador:
             <input type="text" name="Nombre-jugador" id="nombre-jugador" required className="casillero-agregar-jugadores"></input>
         </label>
+
+
+        <label for="Nacimiento-jugador" className='casillero-agregar-jugadores'>
+            Nacimiento Del Jugador:
+            <input type="date" name="nacimiento-jugador" id="nacimiento-jugador" required className="casillero-agregar-jugadores"></input>
+        </label>
+
+
         <label for="Equipo-jugador" className='casillero-agregar-jugadores'>
             Equipo Del Jugador:
             <input type="text" name="Equipo-jugador" id="equipo-jugador" required className="casillero-agregar-jugadores"></input>

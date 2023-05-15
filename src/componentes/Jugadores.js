@@ -9,6 +9,9 @@ import CardMongo from "./CardMongo";
 
 
 export default function Jugadores(){
+
+
+    //Base Json cartas//
 let[datos,setDatos]=useState([]);
 
 const traerInfo=async()=>{
@@ -20,15 +23,42 @@ const traerInfo=async()=>{
    return info 
 }
 
-useEffect(()=>{
-    traerInfo()
+//useEffect(()=>{
+    
 
     //setTimeout(()=>{console.log(datos)},5000)//ejecutar una funcion luego de un cierto tiempo(seg)
     // let alumnos=[....]
     // setDatos(alumnos)
-},[])
+//},[])
 
 useEffect(()=>{console.log(datos)},[datos])//cada vez que se modifique datos lo pone en pantalla
+
+
+//FUNCION MONGODB CARTAS
+
+
+let[datosMongo,setDatosMongo]=useState([]);
+
+const traerInfoMong0=async()=>{
+ let info=await   fetch("http://localhost:3090/InfoCompleta")
+    .then((res)=>res.json())
+
+    .then(data=>setDatosMongo(data))
+    .catch((err)=> console.log(err))
+
+   return info 
+}
+
+useEffect(()=>{
+    traerInfoMong0();traerInfo();
+
+    
+},[])
+
+useEffect(()=>{console.log(datosMongo)},[datosMongo])//cada vez que se modifique datos lo pone en pantalla
+
+
+
 
     return(
         <div>
@@ -41,7 +71,13 @@ useEffect(()=>{console.log(datos)},[datos])//cada vez que se modifique datos lo 
            })}
            </div>
             <Addjugador></Addjugador>
-            <CardMongo></CardMongo>
+
+
+            <div className="Cartas-locas"> 
+            {datosMongo.map((dato)=>{
+          return <CardMongo key={datosMongo.indexOf(dato)} datosMongo={dato} />
+           })}
+           </div>
         </div>
     )
         

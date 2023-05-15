@@ -21,7 +21,7 @@ export default function Addjugador(){
             
             { ocultar ===false?
             <div id="form-add-jugador">
-              <form  method="post" className="Form-Add-Jugador">
+              <form  method="post" className="Form-Add-Jugador" action="http://localhost:3090/AgregarJugador">
                 <h1 className="Crea-tu-Jugador">Crea tu Jugador!</h1>
         <label htlmFor="Imagen-Jugador" className='casillero-agregar-jugadores'>
             Imagen del Jugador
@@ -31,6 +31,12 @@ export default function Addjugador(){
             Nombre Del Jugador:
             <input type="text" name="Nombre-jugador" id="nombre-jugador" required className="casillero-agregar-jugadores"></input>
         </label>
+
+        <label for="Nacimiento-jugador" className='casillero-agregar-jugadores'>
+            Nacimiento Del Jugador:
+            <input type="date" name="nacimiento-jugador" id="nacimiento-jugador" required className="casillero-agregar-jugadores"></input>
+        </label>
+
         <label htmlFor="Equipo-jugador" className='casillero-agregar-jugadores'>
             Equipo Del Jugador:
             <input type="text" name="Equipo-jugador" id="equipo-jugador" required className="casillero-agregar-jugadores"></input>
