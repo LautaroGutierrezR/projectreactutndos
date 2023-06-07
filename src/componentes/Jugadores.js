@@ -7,6 +7,7 @@ import { useEffect,useState } from "react";
 import  "./Jugadores.css"
 import CardMongo from "./CardMongo";
 import Eliminar from "./Eliminar";
+import Update from "./update";
 
 
 export default function Jugadores(){
@@ -79,6 +80,7 @@ useEffect(()=>{console.log(datosMongo)},[datosMongo])//cada vez que se modifique
           return <CardMongo key={datosMongo.indexOf(dato)} datosMongo={dato} />
            })}
            </div>
+           <Update></Update>
            <Eliminar></Eliminar>
         </div>
     )
