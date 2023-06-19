@@ -10,7 +10,7 @@ import Eliminar from "./Eliminar";
 import Update from "./update";
 
 
-export default function Jugadores(){
+export default function AdminJugadores(){
 
 
     //Base Json cartas//
@@ -67,12 +67,13 @@ useEffect(()=>{console.log(datosMongo)},[datosMongo])//cada vez que se modifique
             <div className="navi">
             <Navegation></Navegation>
             </div>
+            <h1>ADMINISTRADOR</h1>
            <div className="Cartas-locas"> 
             {datos.map((dato)=>{
           return <Card key={datos.indexOf(dato)} datos={dato} />
            })}
            </div>
-            <Addjugador></Addjugador>
+            
 
 
             <div className="Cartas-locas"> 
@@ -80,7 +81,10 @@ useEffect(()=>{console.log(datosMongo)},[datosMongo])//cada vez que se modifique
           return <CardMongo key={datosMongo.indexOf(dato)} datosMongo={dato} />
            })}
            </div>
-          
+           <div className="AdminTools">
+           <Update></Update>
+           <Eliminar></Eliminar>
+           </div>
         </div>
     )
         

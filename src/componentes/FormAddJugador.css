@@ -11,6 +11,7 @@
     width: 350px;
     background-color: gold;
     border-radius: 20px;
+    
    
 }
 .casillero-agregar-jugadores{
@@ -24,4 +25,7 @@
 
 :hover.Boton-crear-jugador{
     cursor: pointer;
+}
+.formulario-amarillo{
+    margin-left: 70px;
 }

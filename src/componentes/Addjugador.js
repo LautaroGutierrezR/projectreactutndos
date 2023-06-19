@@ -20,12 +20,12 @@ export default function Addjugador(){
             
             
             { ocultar ===false?
-            <div id="form-add-jugador">
+            <div id="form-add-jugador" className="formulario-amarillo">
               <form encType="multipart/form-data" method="POST" className="Form-Add-Jugador" action="http://localhost:3090/AgregarJugador">
                 <h1 className="Crea-tu-Jugador">Crea tu Jugador!</h1>
         <label htlmFor="Imagen-Jugador" className='casillero-agregar-jugadores'>
             Imagen del Jugador
-            <input type="file"  name="imagen" id="img-jugador" className="casillero-agregar-jugadores" accept="image/*"></input>
+            <input type="file" required name="imagen" id="img-jugador" className="casillero-agregar-jugadores" accept="image/*"></input>
         </label>
         <label htmlFor="Nombre-jugador" className='casillero-agregar-jugadores'>
             Nombre Del Jugador:

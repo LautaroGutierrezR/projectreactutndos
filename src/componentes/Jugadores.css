@@ -8,3 +8,11 @@
     justify-content: center;
     margin-top: 30px;
 }
+.AdminTools{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

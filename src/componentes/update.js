@@ -2,7 +2,7 @@ import "./update.css"
 export default function Update(){
     const modificarDato=async(event)=>{
         event.preventDefault();
-        let formData =  {NombreJugadorActualizar:event.target[0].value,select:event.target[1].value,Dato_Actualizado:event.target[2].value}
+        let formData =  {NombreJugadorActualizar:event.target[0].value,select:event.target[1].value,Dato_actualizado:event.target[2].value}
         let formJSON= JSON.stringify(formData)
         console.log(formData)
         const response = await fetch("http://localhost:3090/ModificarJugador" ,{
@@ -13,6 +13,7 @@ export default function Update(){
             body:formJSON
           })
           if(response.ok){
+            window.location.reload(false);
 
           }
     }
