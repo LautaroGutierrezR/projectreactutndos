@@ -8,6 +8,7 @@ import  "./Jugadores.css"
 import CardMongo from "./CardMongo";
 import Eliminar from "./Eliminar";
 import Update from "./update";
+import Footer from "./Footer";
 
 
 export default function AdminJugadores(){
@@ -84,7 +85,9 @@ useEffect(()=>{console.log(datosMongo)},[datosMongo])//cada vez que se modifique
            <div className="AdminTools">
            <Update></Update>
            <Eliminar></Eliminar>
-           </div>
+          
+           </div> 
+           <Footer></Footer>
         </div>
     )
         

@@ -1,7 +1,7 @@
 import Addjugador from "./Addjugador";
 import Card from "./Card";
 import Navegation from "./Navegation";
-
+import Footer from "./Footer"
 import { useEffect,useState } from "react";
 
 import  "./Jugadores.css"
@@ -80,7 +80,7 @@ useEffect(()=>{console.log(datosMongo)},[datosMongo])//cada vez que se modifique
           return <CardMongo key={datosMongo.indexOf(dato)} datosMongo={dato} />
            })}
            </div>
-          
+          <Footer></Footer>
         </div>
     )
         
