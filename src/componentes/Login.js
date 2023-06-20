@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import './Login.css'
 export default Login;
 
@@ -7,7 +8,8 @@ export default Login;
 
     
     return(
-        <div className='Login'>
+      <Fragment>
+        <section className='Login'>
             <h1>Inicia sesion</h1>
             
             <form  method="POST" className="Formulario" action='http://localhost:3090/Logeo'>
@@ -22,6 +24,7 @@ export default Login;
         </label>
             </form>
         
-        </div>
+        </section>
+        </Fragment>
     )
 }

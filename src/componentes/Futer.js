@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import './Footer.css';
 
 
@@ -5,10 +6,12 @@ export default Footer;
 
 function Footer(){
     return(
-        <div className="Footer">
+        <Fragment>
+        <footer className="Footer">
             
             <a className="link"  href="#navegation">  Volver arriba ⬆️
         </a>
-        </div>
+        </footer>
+        </Fragment>
     );
 }

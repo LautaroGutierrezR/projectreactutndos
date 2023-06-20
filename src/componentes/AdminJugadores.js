@@ -1,14 +1,14 @@
-import Addjugador from "./Addjugador";
 import Card from "./Card";
 import Navegation from "./Navegation";
 
-import { useEffect,useState } from "react";
+import { useEffect,useState,Fragment } from "react";
+
 
 import  "./Jugadores.css"
 import CardMongo from "./CardMongo";
 import Eliminar from "./Eliminar";
 import Update from "./update";
-import Footer from "./Footer";
+import Footer from "./Futer";
 
 
 export default function AdminJugadores(){
@@ -64,7 +64,8 @@ useEffect(()=>{console.log(datosMongo)},[datosMongo])//cada vez que se modifique
 
 
     return(
-        <div>
+        <Fragment>
+        
             <div className="navi">
             <Navegation></Navegation>
             </div>
@@ -75,8 +76,6 @@ useEffect(()=>{console.log(datosMongo)},[datosMongo])//cada vez que se modifique
            })}
            </div>
             
-
-
             <div className="Cartas-locas"> 
             {datosMongo.map((dato)=>{
           return <CardMongo key={datosMongo.indexOf(dato)} datosMongo={dato} />
@@ -88,7 +87,8 @@ useEffect(()=>{console.log(datosMongo)},[datosMongo])//cada vez que se modifique
           
            </div> 
            <Footer></Footer>
-        </div>
+        
+        </Fragment>
     )
         
     

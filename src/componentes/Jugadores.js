@@ -1,14 +1,10 @@
 import Addjugador from "./Addjugador";
 import Card from "./Card";
 import Navegation from "./Navegation";
-import Footer from "./Footer"
-import { useEffect,useState } from "react";
-
+import Footer from "./Futer";
 import  "./Jugadores.css"
 import CardMongo from "./CardMongo";
-import Eliminar from "./Eliminar";
-import Update from "./update";
-
+import { useEffect,useState,Fragment } from "react";
 
 export default function Jugadores(){
 
@@ -63,15 +59,18 @@ useEffect(()=>{console.log(datosMongo)},[datosMongo])//cada vez que se modifique
 
 
     return(
-        <div>
+       <Fragment>
+
             <div className="navi">
             <Navegation></Navegation>
             </div>
+
            <div className="Cartas-locas"> 
             {datos.map((dato)=>{
           return <Card key={datos.indexOf(dato)} datos={dato} />
            })}
            </div>
+
             <Addjugador></Addjugador>
 
 
@@ -80,8 +79,10 @@ useEffect(()=>{console.log(datosMongo)},[datosMongo])//cada vez que se modifique
           return <CardMongo key={datosMongo.indexOf(dato)} datosMongo={dato} />
            })}
            </div>
-          <Footer></Footer>
-        </div>
+
+             <Footer></Footer>
+
+       </Fragment>
     )
         
     

@@ -1,7 +1,9 @@
+import { Fragment } from "react"
 import "./Eliminar.css"
 export default function Eliminar(){
     return(
-<div className="div-form">
+        <Fragment>
+<section className="div-form">
 <form  method="POST" className="Form-Eliminar" action="http://localhost:3090/BorrarJugador">
 <h1 className="EliminarJugador">Eliminar Jugador</h1>
 
@@ -17,5 +19,6 @@ A quien eliminamos?
 
 <input className='Boton-eliminar-jugador' type="submit" value="Eliminar Jugador"></input>
 </form>
-</div>
+</section>
+  </Fragment>
 )}

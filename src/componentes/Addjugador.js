@@ -1,7 +1,7 @@
 import "./FormAddJugador.css"
 import "./addJugador.css"
 
-import { useState } from "react";
+import { Fragment, useState } from "react";
 
 
 export default function Addjugador(){
@@ -13,7 +13,8 @@ export default function Addjugador(){
 
 
     return(
-        <div>
+        <Fragment>
+        <section>
         
             <button className="Boton-agregar" id="boton-agregar"onClick={mostrar}>Agregar Jugador</button>
             
@@ -54,7 +55,8 @@ export default function Addjugador(){
             </form>
         </div>:"" } 
         
-        </div>
+        </section>
+        </Fragment>
     )
 }
 //los :"" al lado del div son muy importantes

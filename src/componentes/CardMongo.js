@@ -4,7 +4,7 @@ export default function CardMongo({datosMongo}){
     return(
         <div className="TarjetaM">
             
-              <img className="ImagenM" alt="algo" src= {`./imagenes/${datosMongo.Imagen}`} />
+              <img className="ImagenM" alt={datosMongo.Nombre} src= {`./imagenes/${datosMongo.Imagen}`} />
            
             <h1 className="Nombre-jugadorM"> {datosMongo.Nombre} </h1>
             <ul className="ListaM">

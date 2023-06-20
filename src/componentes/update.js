@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import "./update.css"
 export default function Update(){
     const modificarDato=async(event)=>{
@@ -18,7 +19,8 @@ export default function Update(){
           }
     }
     return(
-<div className="div-forma" onSubmit={(event)=>{modificarDato(event)}} >
+        <Fragment>
+<section className="div-forma" onSubmit={(event)=>{modificarDato(event)}} >
 <form  className="Form-Update" >
 <h1 className="Actualizar">Actualizar Jugador</h1>
 
@@ -47,5 +49,6 @@ Dato actualizado
 
 <input className='Boton-actualizar-jugador' type="submit" value="Actualizar Dato"></input>
 </form>
-</div>
+</section>
+  </Fragment>
 )}
