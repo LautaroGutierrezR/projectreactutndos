@@ -33,7 +33,7 @@ export default function Addjugador(){
             <input type="text" name="Nombre_jugador" id="nombre-jugador" required className="casillero-agregar-jugadores"></input>
         </label>
 
-        <label for="Nacimiento-jugador" className='casillero-agregar-jugadores'>
+        <label htmlfor="Nacimiento-jugador" className='casillero-agregar-jugadores'>
             Nacimiento Del Jugador:
             <input type="date" name="nacimiento_jugador" id="nacimiento-jugador" required className="casillero-agregar-jugadores"></input>
         </label>
